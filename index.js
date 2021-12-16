@@ -32,6 +32,6 @@ const modelRoutes = require('./routes/ModelRoutes');
 app.use(modelRoutes);
 
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`Server is running on port : 8000`)
 })
